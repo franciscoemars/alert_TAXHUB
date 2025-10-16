@@ -14,11 +14,11 @@ Este projeto consiste em um bot para monitoramento automático da API TaxHub, co
 ## Estrutura
 ```sh
 .
-├── consumir_taxhub.py # Função para consumir a API TaxHub
-├── send_mail.py # Função para envio de e-mails
+├── crequest_taxCalc.py # Função para consumir a API TaxHub
+├── eng_mail.py # Função para envio de e-mails
 ├── bot.py # Orquestrador: chama os módulos, faz verificações e logging
 ├── .env # Variáveis sensíveis de ambiente (NÃO versionar)
-├── bot_taxhub.log # Log local das operações (gerado automaticamente)
+├── bot_taxhub.log # Log local das operações (gerado automaticamente, não versionado)
 ```
 
 ---
