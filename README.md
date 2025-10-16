@@ -34,14 +34,14 @@ pip install -r requeriments.txt
 - Crie um arquivo .env na raiz do projeto com o seguinte conteúdo, personalizando conforme necessário:
 
 ```sh
-TAXHUB_URL=http://192.168.1.2:8189/atosdata/TaxCalc
+TAXHUB_URL=http://seuip:suaporta/atosdata/TaxCalc
 TAXHUB_AUTHORIZATION=Basic <SEU_TOKEN_AQUI>
 
-SMTP_SSL_HOST=mail.cafeutam.com.br
+SMTP_SSL_HOST=mail.provedor.com.br
 SMTP_SSL_PORT=465
-SMTP_USERNAME=utambot@cafeutam.com.br
+SMTP_USERNAME=user@provedor.com.br
 SMTP_PASSWORD=<SENHA_SUA>
-SMTP_FROM_ADDR=ubot@cafeutam.com.br
+SMTP_FROM_ADDR=user@provedor.com.br
 
 ALERTA_EMAILS=email1@dominio.com,email2@dominio.com
 ```
