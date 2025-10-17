@@ -7,7 +7,7 @@ from eng_email import send_mail
 
 def salvar_log(texto):
     now = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-    with open('bot_taxhub.log', 'a') as f:
+    with open('/home/cafeutam/alert_TAXHUB/bot_taxhub.log', 'a') as f:
         f.write(f'{now} - {texto}\n')
 
 def main():
@@ -18,7 +18,7 @@ def main():
         assunto = 'Alerta TaxHub: resposta inesperada'
         corpo = f'Foi recebida uma resposta inesperada da TaxHub:\n\n{resultado}'
         # Para: ler do .env ou fixar em uma variável
-        destinatarios = os.environ.get('ALERTA_EMAILS', 'seu@email.com').split(',')
+        destinatarios = os.environ.get('ALERTA_EMAILS').split(',')
         send_mail(corpo, assunto, destinatarios)
         salvar_log(f'ALERTA ENVIADO - Resposta inesperada: {resultado}')
     else:
